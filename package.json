@@ -1,0 +1,9 @@
+{
+  "name": "kylegach.com",
+  "version": "0.1.0",
+  "description": "Personal website of Kyle Gach",
+  "repository": "https://github.com/kylegach/kylegach.com.git",
+  "author": "Kyle Gach <kyle.gach@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
