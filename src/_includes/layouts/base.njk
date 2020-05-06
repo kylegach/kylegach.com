@@ -1,0 +1,30 @@
+{% set siteName = 'Kyle Gach' %}
+{% set pageTitle = title + ' • ' + siteName if title else siteName %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ pageTitle }}</title>
+</head>
+<body>
+  {{content | safe}}
+
+  <hr />
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/writing/">Writing</a></li>
+      </ul>
+    </nav>
+    <ul>
+      <li><a href="mailto:kyle.gach@gmail.com">Email</a></li>
+      <li><a href="https://twitter.com/@kylegach">Twitter</a></li>
+      <li><a href="https://github.com/kylegach">GitHub</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
