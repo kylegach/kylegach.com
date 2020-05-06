@@ -2,6 +2,10 @@
 title: Of the Web
 permalink: /writing/of-the-web/
 date: 2016-04-12T14:01:34Z
+tags:
+  - dev
+  - site
+  - v1
 layout: layouts/base
 ---
 
