@@ -43,7 +43,7 @@ This will be a continuously updated list of work done and remaining on this site
 ### [11ty]
 
   - [x] Initialize ([commit][c1])
-  - [ ] Add task list support to markdown
+  - [x] Add task list support to markdown ([commit][c4])
   - [ ] RSS
     - https://www.11ty.dev/docs/plugins/rss/
   - [ ] Syntax highlighting
@@ -114,3 +114,4 @@ This will be a continuously updated list of work done and remaining on this site
 [c1]: https://github.com/kylegach/kylegach.com/commit/a7e3d1f8a3f12aec0b77cb50b18045b048806a5e
 [c2]: https://github.com/kylegach/kylegach.com/commit/09999f9ad4bbabcc375253dc20aee646279a2dbb
 [c3]: https://github.com/kylegach/kylegach.com/commit/cae108d120aa565a465b5348a6d2bbdfb346dbea
+[c4]: https://github.com/kylegach/kylegach.com/commit/9b6dce61d576f947b0750c8b99d72fdd9656aca5
