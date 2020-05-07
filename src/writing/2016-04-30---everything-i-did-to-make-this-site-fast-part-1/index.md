@@ -6,10 +6,9 @@ tags:
   - dev
   - site
   - v1
-layout: layouts/base
+layout: layouts/page
 ---
 
-# {{ title }}
 
 The web is best when it’s fast. A fast web doesn’t just provide a good experience, though that’s certainly important, it also ensures as many people as possible can access it at all. Many people are on slow, unstable connections. By making a site fast, you make it more likely for them to be able to use it.
 
@@ -65,196 +64,188 @@ _Note: For all of the WebPageTest snapshots, I‘m testing the homepage of the s
 While developing on my home’s broadband connection, I thought the site felt fairly zippy, but these baseline results make it clear that there’s plenty of room for improvement. Here’s a breakdown of the content being loaded:
 
 <figure>
-	<div dir="ltr" style="position: relative; width: 300px; height: 220px;">
-			<div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart.">
-					<svg width="300" height="300" aria-label="A chart." style="overflow: hidden;">
-							<rect x="0" y="0" width="300" height="220" stroke="none" stroke-width="0" fill="#ffffff"></rect>
-							<g transform="translate(-75,-40)">
-									<rect x="276" y="58" width="88" height="83" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-									<g>
-											<rect x="276" y="58" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="67.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">css (1)</text></g>
-											<circle cx="281.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#b2ea94"></circle>
-									</g>
-									<g>
-											<rect x="276" y="76" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="85.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">font (1)</text></g>
-											<circle cx="281.5" cy="81.5" r="5.5" stroke="none" stroke-width="0" fill="#ff523e"></circle>
-									</g>
-									<g>
-											<rect x="276" y="94" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="103.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">html (1)</text></g>
-											<circle cx="281.5" cy="99.5" r="5.5" stroke="none" stroke-width="0" fill="#82b5fc"></circle>
-									</g>
-									<g>
-											<rect x="276" y="112" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="121.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">image (3)</text></g>
-											<circle cx="281.5" cy="117.5" r="5.5" stroke="none" stroke-width="0" fill="#c49ae8"></circle>
-									</g>
-									<g>
-											<rect x="276" y="130" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="139.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">js (2)</text></g>
-											<circle cx="281.5" cy="135.5" r="5.5" stroke="none" stroke-width="0" fill="#fec584"></circle>
-									</g>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L172,65A86,86,0,0,1,232.8111831820431,90.18881681795692L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#b2ea94"></path>
-									<text text-anchor="start" x="180.60355104213698" y="96.6588801727207" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">12.5%</text>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L232.8111831820431,90.18881681795692A86,86,0,0,1,258,151L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#ff523e"></path>
-									<text text-anchor="start" x="210.61189089455615" y="132.43612090582164" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">12.5%</text>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L258,151A86,86,0,0,1,232.8111831820431,211.81118318204307L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#82b5fc"></path>
-									<text text-anchor="start" x="210.61189089455618" y="177.26387909417835" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">12.5%</text>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L86,151A86,86,0,0,1,172,65L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#fec584"></path>
-									<text text-anchor="start" x="116.2883393387254" y="110.13833933872542" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">25%</text>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L232.8111831820431,211.81118318204307A86,86,0,0,1,86,151L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#c49ae8"></path>
-									<text text-anchor="start" x="132.396448957863" y="213.0411198272793" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">37.5%</text>
-							</g>
-					</svg>
-					<div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-							<table>
-									<thead>
-											<tr>
-													<th>Content Type</th>
-													<th>Requests</th>
-											</tr>
-									</thead>
-									<tbody>
-											<tr>
-													<td>css</td>
-													<td>1</td>
-											</tr>
-											<tr>
-													<td>flash</td>
-													<td>0</td>
-											</tr>
-											<tr>
-													<td>font</td>
-													<td>1</td>
-											</tr>
-											<tr>
-													<td>html</td>
-													<td>1</td>
-											</tr>
-											<tr>
-													<td>image</td>
-													<td>3</td>
-											</tr>
-											<tr>
-													<td>js</td>
-													<td>2</td>
-											</tr>
-											<tr>
-													<td>other</td>
-													<td>0</td>
-											</tr>
-									</tbody>
-							</table>
-					</div>
-			</div>
-	</div>
+		<svg width="300" height="220" aria-label="A chart." style="overflow: hidden;">
+				<rect x="0" y="0" width="300" height="220" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+				<g transform="translate(-75,-40)">
+						<rect x="276" y="58" width="88" height="83" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+						<g>
+								<rect x="276" y="58" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+								<g><text text-anchor="start" x="291" y="67.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">css (1)</text></g>
+								<circle cx="281.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#b2ea94"></circle>
+						</g>
+						<g>
+								<rect x="276" y="76" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+								<g><text text-anchor="start" x="291" y="85.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">font (1)</text></g>
+								<circle cx="281.5" cy="81.5" r="5.5" stroke="none" stroke-width="0" fill="#ff523e"></circle>
+						</g>
+						<g>
+								<rect x="276" y="94" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+								<g><text text-anchor="start" x="291" y="103.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">html (1)</text></g>
+								<circle cx="281.5" cy="99.5" r="5.5" stroke="none" stroke-width="0" fill="#82b5fc"></circle>
+						</g>
+						<g>
+								<rect x="276" y="112" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+								<g><text text-anchor="start" x="291" y="121.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">image (3)</text></g>
+								<circle cx="281.5" cy="117.5" r="5.5" stroke="none" stroke-width="0" fill="#c49ae8"></circle>
+						</g>
+						<g>
+								<rect x="276" y="130" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+								<g><text text-anchor="start" x="291" y="139.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">js (2)</text></g>
+								<circle cx="281.5" cy="135.5" r="5.5" stroke="none" stroke-width="0" fill="#fec584"></circle>
+						</g>
+				</g>
+				<g transform="translate(-80,-40)">
+						<path d="M172,151L172,65A86,86,0,0,1,232.8111831820431,90.18881681795692L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#b2ea94"></path>
+						<text text-anchor="start" x="180.60355104213698" y="96.6588801727207" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">12.5%</text>
+				</g>
+				<g transform="translate(-80,-40)">
+						<path d="M172,151L232.8111831820431,90.18881681795692A86,86,0,0,1,258,151L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#ff523e"></path>
+						<text text-anchor="start" x="210.61189089455615" y="132.43612090582164" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">12.5%</text>
+				</g>
+				<g transform="translate(-80,-40)">
+						<path d="M172,151L258,151A86,86,0,0,1,232.8111831820431,211.81118318204307L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#82b5fc"></path>
+						<text text-anchor="start" x="210.61189089455618" y="177.26387909417835" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">12.5%</text>
+				</g>
+				<g transform="translate(-80,-40)">
+						<path d="M172,151L86,151A86,86,0,0,1,172,65L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#fec584"></path>
+						<text text-anchor="start" x="116.2883393387254" y="110.13833933872542" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">25%</text>
+				</g>
+				<g transform="translate(-80,-40)">
+						<path d="M172,151L232.8111831820431,211.81118318204307A86,86,0,0,1,86,151L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#c49ae8"></path>
+						<text text-anchor="start" x="132.396448957863" y="213.0411198272793" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">37.5%</text>
+				</g>
+		</svg>
+		<div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+				<table>
+						<thead>
+								<tr>
+										<th>Content Type</th>
+										<th>Requests</th>
+								</tr>
+						</thead>
+						<tbody>
+								<tr>
+										<td>css</td>
+										<td>1</td>
+								</tr>
+								<tr>
+										<td>flash</td>
+										<td>0</td>
+								</tr>
+								<tr>
+										<td>font</td>
+										<td>1</td>
+								</tr>
+								<tr>
+										<td>html</td>
+										<td>1</td>
+								</tr>
+								<tr>
+										<td>image</td>
+										<td>3</td>
+								</tr>
+								<tr>
+										<td>js</td>
+										<td>2</td>
+								</tr>
+								<tr>
+										<td>other</td>
+										<td>0</td>
+								</tr>
+						</tbody>
+				</table>
+		</div>
 	<figcaption>First view content breakdown, by requests.</figcaption>
 </figure>
 <figure>
-	<div dir="ltr" style="position: relative; width: 300px; height: 220px;">
-			<div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;" aria-label="A chart.">
-					<svg width="300" height="220" aria-label="A chart." style="overflow: hidden;">
-							<rect x="0" y="0" width="300" height="220" stroke="none" stroke-width="0" fill="#ffffff"></rect>
-							<g transform="translate(-80,-40)">
-									<rect x="276" y="58" width="88" height="83" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-									<g>
-											<rect x="276" y="58" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="67.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">css (6.5 Kb)</text></g>
-											<circle cx="281.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#b2ea94"></circle>
-									</g>
-									<g>
-											<rect x="276" y="76" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="85.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">font (19.9 Kb)</text></g>
-											<circle cx="281.5" cy="81.5" r="5.5" stroke="none" stroke-width="0" fill="#ff523e"></circle>
-									</g>
-									<g>
-											<rect x="276" y="94" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="103.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">html (7.92 Kb)</text></g>
-											<circle cx="281.5" cy="99.5" r="5.5" stroke="none" stroke-width="0" fill="#82b5fc"></circle>
-									</g>
-									<g>
-											<rect x="276" y="112" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="121.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">image (402.1 Kb)</text></g>
-											<circle cx="281.5" cy="117.5" r="5.5" stroke="none" stroke-width="0" fill="#c49ae8"></circle>
-									</g>
-									<g>
-											<rect x="276" y="130" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="139.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">js (196 Kb)</text></g>
-											<circle cx="281.5" cy="135.5" r="5.5" stroke="none" stroke-width="0" fill="#fec584"></circle>
-									</g>
-							</g>
-							<g transform="translate(-75,-40)">
-									<path d="M172,151L172,65A86,86,0,0,1,177.51013461663786,65.17670236755914L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#b2ea94"></path>
-							</g>
-							<g transform="translate(-75,-40)">
-									<path d="M172,151L177.51013461663786,65.17670236755914A86,86,0,0,1,194.3200144896735,67.94690280801827L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#ff523e"></path>
-							</g>
-							<g transform="translate(-75,-40)">
-									<path d="M172,151L194.3200144896735,67.94690280801827A86,86,0,0,1,200.76344451294048,69.95270356297507L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#82b5fc"></path>
-							</g>
-							<g transform="translate(-75,-40)">
-									<path d="M172,151L92.0313275160493,182.63876453268406A86,86,0,0,1,172,65L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#fec584"></path>
-									<text text-anchor="start" x="109.06951167305932" y="119.5486073897865" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">31%</text>
-							</g>
-							<g transform="translate(-75,-40)">
-									<path d="M172,151L200.76344451294048,69.95270356297507A86,86,0,1,1,92.0313275160493,182.63876453268406L172,151A0,0,0,1,0,172,151" stroke="#ffffff" stroke-width="1" fill="#c49ae8"></path>
-									<text text-anchor="start" x="199.4738779850747" y="196.31600465641716" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">63.6%</text>
-							</g>
-							<g></g>
-					</svg>
-					<div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-							<table>
-									<thead>
-											<tr>
-													<th>Content Type</th>
-													<th>Bytes</th>
-											</tr>
-									</thead>
-									<tbody>
-											<tr>
-													<td>css</td>
-													<td>6454</td>
-											</tr>
-											<tr>
-													<td>flash</td>
-													<td>0</td>
-											</tr>
-											<tr>
-													<td>font</td>
-													<td>19974</td>
-											</tr>
-											<tr>
-													<td>html</td>
-													<td>7901</td>
-											</tr>
-											<tr>
-													<td>image</td>
-													<td>402108</td>
-											</tr>
-											<tr>
-													<td>js</td>
-													<td>196044</td>
-											</tr>
-											<tr>
-													<td>other</td>
-													<td>0</td>
-											</tr>
-									</tbody>
-							</table>
-					</div>
-			</div>
+	<svg width="300" height="220" aria-label="A chart." style="overflow: hidden;">
+			<rect x="0" y="0" width="300" height="220" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+			<g transform="translate(-80,-40)">
+					<rect x="276" y="58" width="88" height="83" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+					<g>
+							<rect x="276" y="58" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="67.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">css (6.5 Kb)</text></g>
+							<circle cx="281.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#b2ea94"></circle>
+					</g>
+					<g>
+							<rect x="276" y="76" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="85.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">font (19.9 Kb)</text></g>
+							<circle cx="281.5" cy="81.5" r="5.5" stroke="none" stroke-width="0" fill="#ff523e"></circle>
+					</g>
+					<g>
+							<rect x="276" y="94" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="103.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">html (7.92 Kb)</text></g>
+							<circle cx="281.5" cy="99.5" r="5.5" stroke="none" stroke-width="0" fill="#82b5fc"></circle>
+					</g>
+					<g>
+							<rect x="276" y="112" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="121.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">image (402.1 Kb)</text></g>
+							<circle cx="281.5" cy="117.5" r="5.5" stroke="none" stroke-width="0" fill="#c49ae8"></circle>
+					</g>
+					<g>
+							<rect x="276" y="130" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="139.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">js (196 Kb)</text></g>
+							<circle cx="281.5" cy="135.5" r="5.5" stroke="none" stroke-width="0" fill="#fec584"></circle>
+					</g>
+			</g>
+			<g transform="translate(-75,-40)">
+					<path d="M172,151L172,65A86,86,0,0,1,177.51013461663786,65.17670236755914L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#b2ea94"></path>
+			</g>
+			<g transform="translate(-75,-40)">
+					<path d="M172,151L177.51013461663786,65.17670236755914A86,86,0,0,1,194.3200144896735,67.94690280801827L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#ff523e"></path>
+			</g>
+			<g transform="translate(-75,-40)">
+					<path d="M172,151L194.3200144896735,67.94690280801827A86,86,0,0,1,200.76344451294048,69.95270356297507L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#82b5fc"></path>
+			</g>
+			<g transform="translate(-75,-40)">
+					<path d="M172,151L92.0313275160493,182.63876453268406A86,86,0,0,1,172,65L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#fec584"></path>
+					<text text-anchor="start" x="109.06951167305932" y="119.5486073897865" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">31%</text>
+			</g>
+			<g transform="translate(-75,-40)">
+					<path d="M172,151L200.76344451294048,69.95270356297507A86,86,0,1,1,92.0313275160493,182.63876453268406L172,151A0,0,0,1,0,172,151" stroke="#ffffff" stroke-width="1" fill="#c49ae8"></path>
+					<text text-anchor="start" x="199.4738779850747" y="196.31600465641716" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">63.6%</text>
+			</g>
+			<g></g>
+	</svg>
+	<div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+			<table>
+					<thead>
+							<tr>
+									<th>Content Type</th>
+									<th>Bytes</th>
+							</tr>
+					</thead>
+					<tbody>
+							<tr>
+									<td>css</td>
+									<td>6454</td>
+							</tr>
+							<tr>
+									<td>flash</td>
+									<td>0</td>
+							</tr>
+							<tr>
+									<td>font</td>
+									<td>19974</td>
+							</tr>
+							<tr>
+									<td>html</td>
+									<td>7901</td>
+							</tr>
+							<tr>
+									<td>image</td>
+									<td>402108</td>
+							</tr>
+							<tr>
+									<td>js</td>
+									<td>196044</td>
+							</tr>
+							<tr>
+									<td>other</td>
+									<td>0</td>
+							</tr>
+					</tbody>
+			</table>
 	</div>
 	<figcaption>First view content breakdown, by bytes.</figcaption>
 </figure>
@@ -311,98 +302,94 @@ I’m not sure why the speed index on the first view and load time on the repeat
 And here’s the new breakdown:
 
 <figure>
-	<div dir="ltr" style="position: relative; width: 300px; height: 220px;">
-			<div aria-label="A chart." style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
-					<svg width="300" height="220" aria-label="A chart." style="overflow: hidden;">
-							<rect x="0" y="0" width="300" height="220" stroke="none" stroke-width="0" fill="#ffffff"></rect>
-							<g transform="translate(-80,-40)">
-									<rect x="276" y="58" width="88" height="83" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-									<g>
-											<rect x="276" y="58" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="67.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">css (6.5 Kb)</text></g>
-											<circle cx="281.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#b2ea94"></circle>
-									</g>
-									<g>
-											<rect x="276" y="76" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="85.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">font (19.9 Kb)</text></g>
-											<circle cx="281.5" cy="81.5" r="5.5" stroke="none" stroke-width="0" fill="#ff523e"></circle>
-									</g>
-									<g>
-											<rect x="276" y="94" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="103.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">html (7.92 Kb)</text></g>
-											<circle cx="281.5" cy="99.5" r="5.5" stroke="none" stroke-width="0" fill="#82b5fc"></circle>
-									</g>
-									<g>
-											<rect x="276" y="112" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="121.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">image (70.1 Kb)</text></g>
-											<circle cx="281.5" cy="117.5" r="5.5" stroke="none" stroke-width="0" fill="#c49ae8"></circle>
-									</g>
-									<g>
-											<rect x="276" y="130" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
-											<g><text text-anchor="start" x="291" y="139.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">js (196 Kb)</text></g>
-											<circle cx="281.5" cy="135.5" r="5.5" stroke="none" stroke-width="0" fill="#fec584"></circle>
-									</g>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L172,65A86,86,0,0,1,183.80813767046166,65.81450895395729L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#b2ea94"></path>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L183.80813767046166,65.81450895395729A86,86,0,0,1,217.36564337247916,77.93866685173997L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#ff523e"></path>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L217.36564337247916,77.93866685173997A86,86,0,0,1,228.79610027103274,86.4228910990683L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#82b5fc"></path>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L228.79610027103274,86.4228910990683A86,86,0,0,1,242.1691060513362,200.72219379669738L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#c49ae8"></path>
-									<text text-anchor="start" x="214.97755276961263" y="148.00813279040895" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">23.3%</text>
-							</g>
-							<g transform="translate(-80,-40)">
-									<path d="M172,151L242.1691060513362,200.72219379669738A86,86,0,1,1,172,65L172,151A0,0,0,1,0,172,151" stroke="#ffffff" stroke-width="1" fill="#fec584"></path>
-									<text text-anchor="start" x="104.38135169191824" y="181.79562221607026" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">65.2%</text>
-							</g>
-							<g></g>
-					</svg>
-					<div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
-							<table>
-									<thead>
-											<tr>
-													<th>Content Type</th>
-													<th>Bytes</th>
-											</tr>
-									</thead>
-									<tbody>
-											<tr>
-													<td>css</td>
-													<td>6583</td>
-											</tr>
-											<tr>
-													<td>flash</td>
-													<td>0</td>
-											</tr>
-											<tr>
-													<td>font</td>
-													<td>19974</td>
-											</tr>
-											<tr>
-													<td>html</td>
-													<td>7920</td>
-											</tr>
-											<tr>
-													<td>image</td>
-													<td>70060</td>
-											</tr>
-											<tr>
-													<td>js</td>
-													<td>195757</td>
-											</tr>
-											<tr>
-													<td>other</td>
-													<td>0</td>
-											</tr>
-									</tbody>
-							</table>
-					</div>
-			</div>
+	<svg width="300" height="220" aria-label="A chart." style="overflow: hidden;">
+			<rect x="0" y="0" width="300" height="220" stroke="none" stroke-width="0" fill="#ffffff"></rect>
+			<g transform="translate(-80,-40)">
+					<rect x="276" y="58" width="88" height="83" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+					<g>
+							<rect x="276" y="58" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="67.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">css (6.5 Kb)</text></g>
+							<circle cx="281.5" cy="63.5" r="5.5" stroke="none" stroke-width="0" fill="#b2ea94"></circle>
+					</g>
+					<g>
+							<rect x="276" y="76" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="85.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">font (19.9 Kb)</text></g>
+							<circle cx="281.5" cy="81.5" r="5.5" stroke="none" stroke-width="0" fill="#ff523e"></circle>
+					</g>
+					<g>
+							<rect x="276" y="94" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="103.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">html (7.92 Kb)</text></g>
+							<circle cx="281.5" cy="99.5" r="5.5" stroke="none" stroke-width="0" fill="#82b5fc"></circle>
+					</g>
+					<g>
+							<rect x="276" y="112" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="121.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">image (70.1 Kb)</text></g>
+							<circle cx="281.5" cy="117.5" r="5.5" stroke="none" stroke-width="0" fill="#c49ae8"></circle>
+					</g>
+					<g>
+							<rect x="276" y="130" width="88" height="11" stroke="none" stroke-width="0" fill-opacity="0" fill="#ffffff"></rect>
+							<g><text text-anchor="start" x="291" y="139.35" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#222222">js (196 Kb)</text></g>
+							<circle cx="281.5" cy="135.5" r="5.5" stroke="none" stroke-width="0" fill="#fec584"></circle>
+					</g>
+			</g>
+			<g transform="translate(-80,-40)">
+					<path d="M172,151L172,65A86,86,0,0,1,183.80813767046166,65.81450895395729L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#b2ea94"></path>
+			</g>
+			<g transform="translate(-80,-40)">
+					<path d="M172,151L183.80813767046166,65.81450895395729A86,86,0,0,1,217.36564337247916,77.93866685173997L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#ff523e"></path>
+			</g>
+			<g transform="translate(-80,-40)">
+					<path d="M172,151L217.36564337247916,77.93866685173997A86,86,0,0,1,228.79610027103274,86.4228910990683L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#82b5fc"></path>
+			</g>
+			<g transform="translate(-80,-40)">
+					<path d="M172,151L228.79610027103274,86.4228910990683A86,86,0,0,1,242.1691060513362,200.72219379669738L172,151A0,0,0,0,0,172,151" stroke="#ffffff" stroke-width="1" fill="#c49ae8"></path>
+					<text text-anchor="start" x="214.97755276961263" y="148.00813279040895" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">23.3%</text>
+			</g>
+			<g transform="translate(-80,-40)">
+					<path d="M172,151L242.1691060513362,200.72219379669738A86,86,0,1,1,172,65L172,151A0,0,0,1,0,172,151" stroke="#ffffff" stroke-width="1" fill="#fec584"></path>
+					<text text-anchor="start" x="104.38135169191824" y="181.79562221607026" font-family="Arial" font-size="11" stroke="none" stroke-width="0" fill="#ffffff">65.2%</text>
+			</g>
+			<g></g>
+	</svg>
+	<div aria-label="A tabular representation of the data in the chart." style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">
+			<table>
+					<thead>
+							<tr>
+									<th>Content Type</th>
+									<th>Bytes</th>
+							</tr>
+					</thead>
+					<tbody>
+							<tr>
+									<td>css</td>
+									<td>6583</td>
+							</tr>
+							<tr>
+									<td>flash</td>
+									<td>0</td>
+							</tr>
+							<tr>
+									<td>font</td>
+									<td>19974</td>
+							</tr>
+							<tr>
+									<td>html</td>
+									<td>7920</td>
+							</tr>
+							<tr>
+									<td>image</td>
+									<td>70060</td>
+							</tr>
+							<tr>
+									<td>js</td>
+									<td>195757</td>
+							</tr>
+							<tr>
+									<td>other</td>
+									<td>0</td>
+							</tr>
+					</tbody>
+			</table>
 	</div>
 	<figcaption>First view content breakdown after optimizing images, by bytes.</figcaption>
 </figure>

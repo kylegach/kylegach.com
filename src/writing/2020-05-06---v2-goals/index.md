@@ -5,11 +5,9 @@ date: 2020-05-06T20:55:10Z
 tags:
   - site
   - v2
-layout: layouts/base
+layout: layouts/page
 ---
 
-
-# {{ title }}
 
 Why rebuild and redesign? On an entirely new stack? In the open?
 
