@@ -1,6 +1,8 @@
 {% set siteName = 'Kyle Gach' %}
 {% set pageTitle = title + ' • ' + siteName if title else siteName %}
 
+{% set isHome = page.url === '/' %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +13,21 @@
   <link href="/styles/site.css" rel="stylesheet">
 </head>
 <body>
-  {{content | safe}}
+  {% if not isHome %}
+    <p style="background:lightyellow; font-size:smaller; margin-top:0; padding:0.5rem">I’m rebuilding and redesigning this website in the open. <a href="/writing">Follow along, if you wish.</a></p>
+  {% endif %}
+
+  <header>
+    <nav>
+      <a href="/"><strong>Kyle Gach</strong></a>
+    </nav>
+    {% if isHome %}
+      <p>Rhymes with scratch</p>
+    {% endif %}
+    <br />
+  </header>
+
+  {{ content | safe }}
 
   <hr />
   <footer>
