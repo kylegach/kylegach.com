@@ -9,23 +9,16 @@ tags:
 layout: layouts/base
 ---
 
+
 # {{ title }}
 
-I learned React when I [built the first version of this site][of-the-web]. This next version will provide an opportunity to learn once again. And this time, I plan to share as I go.
+In an effort to share openly, this post will track and record the work done for the site. [Read more about why I'm rebuilding and the goals I have for this project](/writing/v2-goals).
 
------
-
-## Over-engineered on purpose
-
-Look. I know this site is little more than a simple blog. As such, it doesn't _need_ a bunch of the stuff listed below. But:
-
-1. I'm using the experience to both learn and share.
-1. I'm challenging myself to build and maintain a ~complex~ _sophisticated_ site without losing focus on the people that visit (performance, accessibility, etc.).
-1. The beauty of a personal site is you can do whatever you want.
 
 ## Tasks
 
-This will be a continuously updated list of work done and remaining on this site.
+Continuously updated.
+
 
 ### Content
 
@@ -79,12 +72,12 @@ This will be a continuously updated list of work done and remaining on this site
 - [ ] [TinaCMS]? [NetlifyCMS]? Others?
 - [ ] Indie Web
   - [ ] Web mentions
-    
 
 ### Design
 
 - [x] Basic starting styles ([commit][c3])
 - [ ] [Tailwind]?
+
 
 [of-the-web]: /writing/of-the-web/
 
