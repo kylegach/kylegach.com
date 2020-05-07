@@ -6,10 +6,9 @@ tags:
   - dev
   - site
   - v1
-layout: layouts/base
+layout: layouts/page
 ---
 
-# {{ title }}
 
 I believe the web is meant to be open and available to everyone, no matter who they are, what device/software they’re using, or the speed/quality of the network they’re on.
 

@@ -1,10 +1,9 @@
 ---
 title: Writing
 permalink: /writing/
-layout: layouts/base
+layout: layouts/page
 ---
 
-# {{ title }}
 
 I believe design is made with words, not just pixels and code. This is where I practice.
 

@@ -6,10 +6,9 @@ tags:
   - dev
   - site
   - v1
-layout: layouts/base
+layout: layouts/page
 ---
 
-# {{ title }}
 
 I’ve been _on_ the web for most of my life, but, without a site to call home, I haven’t been [_of_ the web](https://adactio.com/journal/9016) for far too long.
 

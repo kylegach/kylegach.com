@@ -6,11 +6,9 @@ tags:
   - dev
   - site
   - v2
-layout: layouts/base
+layout: layouts/page
 ---
 
-
-# {{ title }}
 
 In an effort to share openly, this post will track and record the work done for the site. [Read more about why I'm rebuilding and the goals I have for this project](/writing/v2-goals).
 
