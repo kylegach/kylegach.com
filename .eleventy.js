@@ -17,6 +17,7 @@ module.exports = function(config) {
     ].reverse();
   });
 
+  config.addPassthroughCopy({ './public': './' });
   config.addPassthroughCopy('./src/img');
   config.addPassthroughCopy('./src/styles');
   
