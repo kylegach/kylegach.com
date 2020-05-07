@@ -9,6 +9,8 @@ layout: layouts/base
 ---
 
 
+# {{ title }}
+
 Why rebuild and redesign? On an entirely new stack? In the open?
 
 -----
