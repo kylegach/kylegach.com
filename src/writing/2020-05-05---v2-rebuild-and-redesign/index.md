@@ -21,8 +21,8 @@ Continuously updated.
 ### Content
 
 - [x] Archive old version and content at v1 subdomain
-- [x] Temporary home page ([commit][c2])
-- [x] Migrate old content ([commit][c2])
+- [x] Temporary home page ([post][p1])
+- [x] Migrate old content ([post][p1])
   - [ ] Work
   - [ ] Résumé
   - [ ] Colophon
@@ -33,8 +33,8 @@ Continuously updated.
 
 ### [11ty]
 
-  - [x] Initialize ([commit][c1])
-  - [x] Add task list support to markdown ([commit][c4])
+  - [x] Initialize ([post][p1])
+  - [x] Add task list support to markdown ([post][p1])
   - [ ] RSS
     - https://www.11ty.dev/docs/plugins/rss/
   - [ ] Syntax highlighting
@@ -73,7 +73,7 @@ Continuously updated.
 
 ### Design
 
-- [x] Basic starting styles ([commit][c3])
+- [x] Basic starting styles ([post][p1])
 - [ ] [Tailwind]?
 
 
@@ -102,7 +102,4 @@ Continuously updated.
 [NetlifyCMS]: https://www.netlifycms.org/
 [Tailwind]: https://tailwindcss.com/
 
-[c1]: https://github.com/kylegach/kylegach.com/commit/a7e3d1f8a3f12aec0b77cb50b18045b048806a5e
-[c2]: https://github.com/kylegach/kylegach.com/commit/09999f9ad4bbabcc375253dc20aee646279a2dbb
-[c3]: https://github.com/kylegach/kylegach.com/commit/cae108d120aa565a465b5348a6d2bbdfb346dbea
-[c4]: https://github.com/kylegach/kylegach.com/commit/9b6dce61d576f947b0750c8b99d72fdd9656aca5
+[p1]: /writing/the-work-before-the-work/
