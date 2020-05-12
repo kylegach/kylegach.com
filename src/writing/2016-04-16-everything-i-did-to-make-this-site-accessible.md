@@ -1,6 +1,5 @@
 ---
 title: Everything I Did to Make This Site Accessible
-permalink: /writing/everything-i-did-to-make-this-site-accessible/
 date: 2016-04-16T04:54:54Z
 tags:
   - dev

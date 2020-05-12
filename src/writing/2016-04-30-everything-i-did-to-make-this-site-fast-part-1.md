@@ -1,6 +1,5 @@
 ---
 title: Everything I Did to Make This Site Fast, Part 1
-permalink: /writing/everything-i-did-to-make-this-site-fast-part-1/
 date: 2016-04-30T22:08:10Z
 tags:
   - dev
