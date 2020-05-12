@@ -5,7 +5,6 @@ date: 2020-05-07T22:58:10Z
 tags:
   - site
   - v2
-layout: layouts/page
 ---
 
 

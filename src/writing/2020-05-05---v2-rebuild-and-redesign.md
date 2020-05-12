@@ -6,7 +6,6 @@ tags:
   - dev
   - site
   - v2
-layout: layouts/page
 ---
 
 
