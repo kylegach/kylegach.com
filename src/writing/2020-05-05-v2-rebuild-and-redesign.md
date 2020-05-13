@@ -21,9 +21,9 @@ Continuously updated.
 - [x] Archive old version and content at v1 subdomain
 - [x] Temporary home page ([post][p1])
 - [x] Migrate old content ([post][p1])
-  - [ ] Work
-  - [ ] Résumé
-  - [ ] Colophon
+  - [x] Work
+  - [x] Résumé
+  - [x] Colophon
 - [ ] Contact form?
 - [ ] Notes?
 - [ ] Tweets?
@@ -33,7 +33,7 @@ Continuously updated.
 
   - [x] Initialize ([post][p1])
   - [x] Add task list support to markdown ([post][p1])
-  - [ ] RSS
+  - [x] RSS
     - https://www.11ty.dev/docs/plugins/rss/
   - [ ] Syntax highlighting
     - https://www.11ty.dev/docs/plugins/syntaxhighlight/
