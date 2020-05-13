@@ -2,7 +2,7 @@ let pluginRss = require("@11ty/eleventy-plugin-rss");
 let markdownIt = require('markdown-it');
 let taskLists = require('markdown-it-task-lists');
 
-const WRITING_GLOB = './src/writing/*/*.md';
+const WRITING_GLOB = './src/writing/*.md';
 
 let markdownItOptions = {
   breaks: true,

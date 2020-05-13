@@ -1,7 +1,7 @@
 ---
 title: Writing
 permalink: /writing/
-layout: layouts/page
+eleventyExcludeFromCollections: true
 ---
 
 

@@ -1,12 +1,10 @@
 ---
 title: V2 Rebuild & Redesign
-permalink: /writing/v2-rebuild-and-redesign/
 date: 2020-05-05T21:54:10Z
 tags:
   - dev
   - site
   - v2
-layout: layouts/page
 ---
 
 

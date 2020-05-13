@@ -1,11 +1,9 @@
 ---
 title: The Work Before the Work
-permalink: /writing/the-work-before-the-work/
 date: 2020-05-07T22:58:10Z
 tags:
   - site
   - v2
-layout: layouts/page
 ---
 
 
