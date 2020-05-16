@@ -20,12 +20,16 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v2
-    
-    - name: get commit message
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+
+    - name: Get Commit Message
       run: |
-        TMP_COMMIT_MSG=$(git log --no-merges --oneline --format=%B)
-        echo ::set-env name=COMMIT_MSG::$TMP_COMMIT_MSG
+        MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
+        echo "::set-env name=COMMIT_MSG::$MSG"
+      
     - name: show commit message
       run : echo $COMMIT_MSG
       
