@@ -24,7 +24,7 @@ jobs:
       
     # Build
     - name: Build
-      run: ELEVENTY_ENV=production eleventy
+      run: ELEVENTY_ENV=production npx @11ty/eleventy
 
     # Deploy either preview or production
     - name: Deploy
