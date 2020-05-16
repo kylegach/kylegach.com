@@ -24,8 +24,8 @@ jobs:
     
     - name: Testing
       run: |
-        echo github.eventName {{ github.eventName }}
-        echo github.event {{ github.event }}
+        echo github.eventName ${{ github.eventName }}
+        echo github.event ${{ github.event }}
 #     - uses: actions/setup-node@v1
 #       with:
 #         node-version: '10.x'
