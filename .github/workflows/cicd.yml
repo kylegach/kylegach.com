@@ -21,9 +21,13 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-
-    # Build the site & deploy either preview or production
+      
+    # Build
     - name: Build
+      run: ELEVENTY_ENV=production eleventy
+
+    # Deploy either preview or production
+    - name: Deploy
       uses: nwtgck/actions-netlify@v1.1.0
       with:
         publish-dir: './dist'
