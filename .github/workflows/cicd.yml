@@ -24,8 +24,8 @@ jobs:
     
     - name: Testing
       env:
-        MSG: github.event.head_commit.message
-      run: echo "$MSG"
+        GITHUB_CONTEXT: ${{ toJson(github.event) }}
+      run: echo "$GITHUB_CONTEXT"
 #     - uses: actions/setup-node@v1
 #       with:
 #         node-version: '10.x'
