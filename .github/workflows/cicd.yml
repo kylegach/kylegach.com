@@ -21,10 +21,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
       
     # Build
     - name: Build
-      run: ELEVENTY_ENV=production npx @11ty/eleventy
+      run: |
+        yarn
+        yarn build
 
     # Deploy either preview or production
     - name: Deploy
