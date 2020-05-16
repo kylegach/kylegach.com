@@ -23,9 +23,9 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Testing
-      run: |
-        echo github.eventName ${{ github.eventName }}
-        echo github.event ${{ github.event }}
+      env:
+        MSG: github.event.head_commit.message
+      run: echo "$MSG"
 #     - uses: actions/setup-node@v1
 #       with:
 #         node-version: '10.x'
