@@ -21,27 +21,32 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-      
-    # Build
-    - name: Build
+    
+    - name: Testing
       run: |
-        yarn
-        yarn build
+        echo github.eventName {{ github.eventName }}
+        echo github.event {{ github.event }}
+#     - uses: actions/setup-node@v1
+#       with:
+#         node-version: '10.x'
+      
+#     # Build
+#     - name: Build
+#       run: |
+#         yarn
+#         yarn build
 
-    # Deploy either preview or production
-    - name: Deploy
-      uses: nwtgck/actions-netlify@v1.1.0
-      with:
-        publish-dir: './dist'
-        production-branch: 'master'
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        deploy-message: "Deploy from GitHub Actions"
-        enable-pull-request-comment: true
-        enable-commit-comment: true
-        overwrites-pull-request-comment: true
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#     # Deploy either preview or production
+#     - name: Deploy
+#       uses: nwtgck/actions-netlify@v1.1.0
+#       with:
+#         publish-dir: './dist'
+#         production-branch: 'master'
+#         github-token: ${{ secrets.GITHUB_TOKEN }}
+#         deploy-message: "Deploy from GitHub Actions"
+#         enable-pull-request-comment: true
+#         enable-commit-comment: true
+#         overwrites-pull-request-comment: true
+#       env:
+#         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
