@@ -24,7 +24,7 @@ jobs:
     
     - name: get commit message
       run: |
-        TMP_COMMIT_MSG=$(git log --no-merges -1 --oneline --format=%B)
+        TMP_COMMIT_MSG=$(git log --no-merges --oneline --format=%B)
         echo ::set-env name=COMMIT_MSG::$TMP_COMMIT_MSG
     - name: show commit message
       run : echo $COMMIT_MSG
