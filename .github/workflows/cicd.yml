@@ -22,10 +22,11 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
-    - name: Testing
-      env:
-        MSG: $(git log --format=%B -n 1 ${{ github.event.after }})
-      run: echo "$MSG"
+    - name: get commit message
+      run: echo ::set-env name=commitmsg::$(git log --format=%B -n 1 ${{ github.event.after }})
+    - name: show commit message
+      run : echo $commitmsg
+      
 #     - uses: actions/setup-node@v1
 #       with:
 #         node-version: '10.x'
