@@ -17,10 +17,10 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
 
-    - name: Get Commit Message
+    - name: Get Commit Message & SHA
       run: |
         MSG=$(git log -n 1 --format=%s ${{ github.event.after }})
-        SHA=$(git rev-parse --short ${{ github.event.after }}
+        SHA=$(git rev-parse --short ${{ github.event.after }})
         echo "::set-env name=COMMIT_MSG::$MSG"
         echo "::set-env name=COMMIT_SHA::$SHA"
     
