@@ -19,8 +19,8 @@ jobs:
 
     - name: Get Commit Message
       run: |
-        MSG=$(git log --format=%B -n 1 ${{ github.event.after }})
-        echo "::set-env name=COMMIT_MSG::$MSG"
+        SHA_AND_MSG=$(git log --oneline -n 1 ${{ github.event.after }})
+        echo "::set-env name=COMMIT_SHA_AND_MSG::$SHA_AND_MSG"
       
     - uses: actions/setup-node@v1
       with:
@@ -38,10 +38,9 @@ jobs:
         publish-dir: './dist'
         production-branch: 'master'
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        deploy-message: '${{ env.COMMIT_MSG }} (from GitHub Actions)'
+        deploy-message: '${{ github.head_ref }}@${{ env.COMMIT_SHA_AND_MSG }} (${{ github.workflow }} workflow)'
         enable-pull-request-comment: true
         enable-commit-comment: true
-        overwrites-pull-request-comment: true
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
