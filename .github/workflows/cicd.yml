@@ -19,28 +19,35 @@ jobs:
 
     - name: Get Commit Message
       run: |
-        SHA_AND_MSG=$(git log --oneline -n 1 ${{ github.event.after }})
-        echo "::set-env name=COMMIT_SHA_AND_MSG::$SHA_AND_MSG"
-      
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-      
-    - name: Build
+        MSG=$(git log -n 1 --format=%s ${{ github.event.after }})
+        SHA=$(git rev-parse --short ${{ github.event.after }}
+        echo "::set-env name=COMMIT_MSG::$MSG"
+        echo "::set-env name=COMMIT_SHA::$SHA"
+    
+    - name: Debug
       run: |
-        yarn
-        yarn build
+        echo ${{ env.COMMIT_MSG }}
+        echo ${{ env.COMMIT_SHA }}
+      
+#     - uses: actions/setup-node@v1
+#       with:
+#         node-version: '10.x'
+      
+#     - name: Build
+#       run: |
+#         yarn
+#         yarn build
 
-    # Deploy either preview or production
-    - name: Deploy
-      uses: nwtgck/actions-netlify@v1.1.0
-      with:
-        publish-dir: './dist'
-        production-branch: 'master'
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        deploy-message: '${{ github.head_ref }}@${{ env.COMMIT_SHA_AND_MSG }} (${{ github.workflow }} workflow)'
-        enable-pull-request-comment: true
-        enable-commit-comment: true
-      env:
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#     # Deploy either preview or production
+#     - name: Deploy
+#       uses: nwtgck/actions-netlify@v1.1.0
+#       with:
+#         publish-dir: './dist'
+#         production-branch: 'master'
+#         github-token: ${{ secrets.GITHUB_TOKEN }}
+#         deploy-message: '${{ github.head_ref }}@${{ env.COMMIT_SHA }}: ${{ env.COMMIT_MSG }} (${{ github.workflow }} workflow)'
+#         enable-pull-request-comment: true
+#         enable-commit-comment: true
+#       env:
+#         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
