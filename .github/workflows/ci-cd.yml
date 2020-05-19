@@ -40,7 +40,7 @@ jobs:
       
     - name: Build
       run: |
-        yarn
+        yarn install --pure-lockfile --silent
         yarn build
 
     # Deploy either preview or production
