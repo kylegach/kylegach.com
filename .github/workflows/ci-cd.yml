@@ -1,11 +1,11 @@
 name: CI/CD
 
-# Triggers the workflow on push or pull request events but only for the ci-cd-workflow-2 branch
+# Triggers the workflow on push or pull request events but only for the ci-cd-test-target branch
 on:
   push:
-    branches: [ ci-cd-workflow-2 ]
+    branches: [ ci-cd-test-target ]
   pull_request:
-    branches: [ ci-cd-workflow-2 ]
+    branches: [ ci-cd-test-target ]
 
 jobs:
   build-and-deploy:
@@ -21,8 +21,8 @@ jobs:
 
     - name: Create Deploy Message
       run: |
-        # Grab the branch path from the appropriate property on context
-        FULL_PATH_REF="${{ github.pull_request.head.ref || github.ref }}"
+        # Grab the branch path from the appropriate (PR vs. push) property on context
+        FULL_PATH_REF="${{ github.head_ref || github.ref }}"
         # Strip "refs/heads/" from the start
         REF=${FULL_PATH_REF#refs\/heads\/}
         # Yank the commit message from the log, using the SHA
@@ -52,7 +52,7 @@ jobs:
     #   uses: nwtgck/actions-netlify@v1.1.0
     #   with:
     #     publish-dir: './dist'
-    #     production-branch: 'ci-cd-workflow-2'
+    #     production-branch: 'ci-cd-test-target'
     #     github-token: ${{ secrets.GITHUB_TOKEN }}
     #     deploy-message: ${{ env.DEPLOY_MESSAGE }}
     #     enable-pull-request-comment: true
