@@ -42,7 +42,7 @@ Continuously updated.
 ### Tooling
 
 - [x] [Netlify automatic deploys]
-- [ ] [CircleCI], [Travis], [GitHub Actions]?
+- [x] [GitHub Actions]
 - [ ] [Commitizen] (or something else?)
 - [ ] [Lighthouse] report
 - [ ] [changesets]?
