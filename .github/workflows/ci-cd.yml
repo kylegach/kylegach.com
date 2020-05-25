@@ -19,20 +19,24 @@ jobs:
         # Otherwise, the SHA in github.context.* points to the merge commit
         ref: ${{ github.event.pull_request.head.sha }}
 
-    - name: Create Deploy Message
+    - name: Debug
       run: |
-        # Grab the branch path from the appropriate (PR vs. push) property on context
-        FULL_PATH_REF="${{ github.head_ref || github.ref }}"
-        # Strip "refs/heads/" from the start
-        REF=${FULL_PATH_REF#refs\/heads\/}
-        # Yank the commit message from the log, using the SHA
-        COMMIT_MSG=$(git log -n 1 --format=%s ${{ github.event.after }})
-        # Get the short form of the SHA
-        SHA=$(git rev-parse --short ${{ github.event.after }})
-        # Create the deploy message
-        MESSAGE="$REF@$SHA: $COMMIT_MSG (${{ github.workflow }} workflow)"
-        # Set it in env
-        echo "::set-env name=DEPLOY_MESSAGE::$MESSAGE"
+        echo "GitHub context: ${{ toJson(github) }}"
+
+    # - name: Create Deploy Message
+    #   run: |
+    #     # Grab the branch path from the appropriate (PR vs. push) property on context
+    #     FULL_PATH_REF="${{ github.head_ref || github.ref }}"
+    #     # Strip "refs/heads/" from the start
+    #     REF=${FULL_PATH_REF#refs\/heads\/}
+    #     # Yank the commit message from the log, using the SHA
+    #     COMMIT_MSG=$(git log -n 1 --format=%s ${{ github.event.after }})
+    #     # Get the short form of the SHA
+    #     SHA=$(git rev-parse --short ${{ github.event.after }})
+    #     # Create the deploy message
+    #     MESSAGE="$REF@$SHA: $COMMIT_MSG (${{ github.workflow }} workflow)"
+    #     # Set it in env
+    #     echo "::set-env name=DEPLOY_MESSAGE::$MESSAGE"
       
     - uses: actions/setup-node@v1
       with:
