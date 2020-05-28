@@ -4,6 +4,7 @@ date: 2020-05-27T17:50:10Z
 tags:
   - site
   - v2
+templateEngineOverride: md
 ---
 
 
@@ -67,7 +68,7 @@ I want to construct a message with a structure like this:
 
 Workflows are divided into "jobs" (currently, my workflow only has one job, build-and-deploy), and those jobs are further divided into "steps". Each step has [a few properties][steps], and the one most relevant for this post is `run`, which operates as a shell. I'm using the default workflow shell, [bash][].
 
-Workflows also [evaluate expressions][], like referencing a variable, using this syntax: `${{ expression }}, which I'll use a lot here.
+Workflows also [evaluate expressions][], like referencing a variable, using this syntax: `${{ expression }}`, which I'll use a lot here.
 
 
 ## Part 1: Branch Name
