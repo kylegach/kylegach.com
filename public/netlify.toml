@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/work/*"
+  to = "https://v1.kylegach.com/work/:splat"
+  status = 301
