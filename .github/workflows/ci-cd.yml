@@ -45,7 +45,7 @@ jobs:
 
     # Deploy either preview or production
     - name: Deploy
-      uses: nwtgck/actions-netlify@v1.1.0
+      uses: nwtgck/actions-netlify@v1
       with:
         publish-dir: './dist'
         production-branch: 'master'
