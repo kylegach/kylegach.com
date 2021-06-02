@@ -2,10 +2,276 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Refresh" content="0; URL=https://v1.kylegach.com/resume/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Résumé • Kyle Gach</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.18.0/inter.css" />
+  <style>
+    :root {
+      --color-background: #fff;
+      --color-text: #27272a;
+      --color-text-quiet: #d4d4d8;
+
+      --section-title-width: 10rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-background: #18181b;
+        --color-text: #f4f4f5;
+        --color-text-quiet: #3f3f46;
+      }
+    }
+
+    body {
+      background-color: var(--color-background);
+      color: var(--color-text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-weight: 300;
+      line-height: 1.4;
+      padding: 2rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-skip-ink: auto;
+    }
+
+    abbr[title] {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 0.05rem;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.05rem;
+      margin: 0 0 1rem;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul ul {
+      list-style: disc;
+      margin-block-start: 0.5rem;
+      padding-inline-start: 1.25rem;
+    }
+
+    li {
+      margin-block-end: 0.5rem;
+    }
+
+    li::marker {
+      color: var(--color-text-quiet);
+    }
+
+    .resume {
+      margin: 0 auto;
+      max-width: calc(65ch + var(--section-title-width));
+    }
+
+    .header {
+      margin-block-end: 3rem;
+    }
+
+    @media (min-width: 32rem) {
+      .header {
+        align-items: flex-start;
+        display: flex;
+
+        justify-content: space-between;
+      }
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      font-size: smaller;
+      font-style: normal;
+      gap: 0.5rem;
+    }
+
+    @media (min-width: 32rem) {
+      .contact {
+        align-items: flex-end;
+      }
+    }
+
+    .section {
+      margin-block-end: 3rem;
+    }
+
+    @media (min-width: 48rem) {
+      .section {
+        display: grid;
+        grid-template-columns: var(--section-title-width) 1fr;
+        margin-block-end: 2rem;
+      }
+
+      .section > :not(h2) {
+        grid-column-start: 2;
+      }
+    }
+
+    .subSection + .subSection {
+      margin-block-start: 2rem;
+    }
+
+    .subSection-header {
+      margin-block-end: 1rem;
+    }
+
+    @media (min-width: 38rem) {
+      .subSection-header {
+        display: grid;
+        grid-template-columns: 1.25fr 1fr 1fr;
+      }
+
+      .subSection-header > :last-child {
+        text-align: right;
+      }
+    }
+
+    @media (min-width: 32rem) {
+      .skills {
+        columns: 2;
+      }
+      .skills > li {
+        break-inside: avoid;
+      }
+    }
+  </style>
 </head>
 <body>
+  <main class="resume">
+    <header class="header">
+      <h1>Kyle Gach</h1>
+      <address class="contact">
+        <a href="mailto:kyle.gach@gmail.com">kyle.gach@gmail.com</a>
+        <a href="https://kylegach.com">kylegach.com</a>
+        <em>Contact me for phone number & address</em>
+      </address>
+    </header>
+    <section class="section">
+      <h2>Objective</h2>
+      <p>Looking for bright, kind people to build and collaborate with at the intersection of web development and design, focusing on design systems, accessibility, teaching, and building an inclusive, supportive community.</p>
+    </section>
+    <section class="section">
+      <h2>Experience</h2>
+      <section class="subSection">
+        <header class="subSection-header">
+          <h3>Staff Software Engineer</h3>
+          <a href="https://broadcom.com">Broadcom</a>
+          <p>Sep 2016 – Present</p>
+        </header>
+        <ul>
+          <li>
+            Lead engineering of software division's design system (team of 4), serving 8+ product teams
+            <ul>
+              <li>
+                Collaborate with designers, engineers, <abbr title="user experience">UX</abbr> researchers, and other product stakeholders to design & develop all parts of the system, including processes
+              </li>
+              <li>
+                Create, maintain, and distribute inner-sourced packages (React component library, SVG icons, design tokens) to help product teams produce accessible, coherent experiences
+              </li>
+              <li>Onboard and support engineers contributing to the system</li>
+              <li>
+                Create and maintain <abbr title="continuous integration">CI</abbr>/<abbr title="continuous deployment">CD</abbr> pipeline, augmented by automated tests and deployment
+              </li>
+              <li>
+                Write documentation, guides, and other content to aid understanding and use of the system
+              </li>
+              <li>Co-author and publish monthly newsletter</li>
+            </ul>
+          </li>
+          <li>
+            Work directly with product engineering teams to modernize code & practices, integrate the design system, and improve accessibility
+          </li>
+          <li>
+            Contribute to open-source projects to meet internal technical needs
+          </li>
+          <li>
+            Start and lead a company-wide community for ~40 front-end developers
+          </li>
+          <li>Present technical topics to ~300 software division peers</li>
+          <li>Mentor junior developers</li>
+        </ul>
+      </section>
+      <section class="subSection">
+        <header class="subSection-header">
+          <h3>Lead Software Designer</h3>
+          <a href="https://civicplus.com">CivicPlus</a>
+          <p>Dec 2008 – Jul 2016</p>
+        </header>
+        <ul>
+          <li>
+            Worked closely with developers, designers, and managers to create successful solutions for the business and the users
+          </li>
+          <li>Owned the front-end architecture of the product and processes</li>
+          <li>Designed, developed, and maintained a design system</li>
+          <li>
+            Conceptualized, designed, and developed an entirely new process and product to build responsive websites that more than doubled velocity while increasing accessibility, quality, and performance
+          </li>
+          <li>Trained other departments in technical processes and tools</li>
+          <li>
+            Introduced best practices, techniques, and new technologies, such as: UX research, design, &amp; testing; Design systems; Rapid prototyping; Progressive enhancement; RWD; Sass; SVG
+          </li>
+          <li>
+            Served as technical expert in client meetings, often converting upset customers into raving fans
+          </li>
+          <li>Managed, lead, and hired software designers</li>
+        </ul>
+      </section>
+    </section>
+    <section class="section">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Design Systems</li>
+        <li>Modern HTML, CSS, & JS</li>
+        <li>TypeScript</li>
+        <li>React</li>
+        <li>Accessibility (WCAG, WAI-ARIA)</li>
+        <li>Storybook</li>
+        <li>Open Source Management</li>
+        <li>Node scripting</li>
+        <li>
+          <abbr title="continuous integration">CI</abbr>/<abbr title="continuous deployment">CD</abbr> 
+          (GitHub Actions, Travis, Jenkins)
+        </li>
+        <li>Responsive Web Design</li>
+        <li>Technical writing</li>
+        <li>Teaching/mentoring</li>
+        <li>Public Speaking</li>
+        <li>Figma & Sketch</li>
+      </ul>
+    </section>
+    <section class="section">
+      <h2>Education</h2>
+      <div class="subSection-header">
+        <h3><abbr title="Bachelors of Science">B.S.</abbr> Mechanical Engineering</h3>
+        <a href="https://k-state.edu">Kansas State University</a>
+        <p>May 2008</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
