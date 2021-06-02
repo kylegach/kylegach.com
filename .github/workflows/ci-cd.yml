@@ -21,7 +21,7 @@ jobs:
 
     - uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '12.x'
 
     - name: Build
       run: |
@@ -35,22 +35,22 @@ jobs:
         # Strip "refs/heads/" from the start
         REF=${FULL_PATH_REF#refs\/heads\/}
         # Set it in env
-        echo "::set-env name=REF::$REF"
+        echo "REF=$REF" >> $GITHUB_ENV
         
         # Get the short form of the SHA
         SHA=$(git rev-parse --short ${{ github.event.pull_request.head.sha || github.sha }})
         # Set it in env
-        echo "::set-env name=SHA::$SHA"
+        echo "SHA=$SHA" >> $GITHUB_ENV
         
         # Yank the commit message from the log, using the SHA
         COMMIT_MSG=$(git log -n 1 --format=%s $SHA)
         # Set it in env
-        echo "::set-env name=COMMIT_MSG::$COMMIT_MSG"
+        echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV
         
         # If it's a PR, use the title, otherwise, use the commit message
         DEPLOY_MESSAGE="${{ github.event.pull_request.title || env.COMMIT_MSG }}"
         # Set it in env
-        echo "::set-env name=DEPLOY_MESSAGE::$DEPLOY_MESSAGE"
+        echo "DEPLOY_MESSAGE=$DEPLOY_MESSAGE" >> $GITHUB_ENV
 
     # Deploy preview
     - name: Deploy Preview
