@@ -3,16 +3,17 @@
 module.exports = {
   ci: {
     assert: {
-      preset: 'lighthouse:no-pwa',
+      preset: "lighthouse:no-pwa",
       assertions: {
-        bypass: 'off',
-        'meta-description': 'off',
-        'is-crawlable': 'off',
-        'tap-targets': 'off',
-      }
+        bypass: "off",
+        "meta-description": "off",
+        "is-crawlable": "off",
+        "tap-targets": "off",
+        "csp-xss": "off",
+      },
     },
     upload: {
-      target: 'temporary-public-storage',
+      target: "temporary-public-storage",
     },
   },
 };
